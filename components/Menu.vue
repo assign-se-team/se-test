@@ -29,7 +29,7 @@
             class="row items-center"
           >
             <nuxt-link
-              to="./"
+              to="/"
             >
               <q-icon 
                 name="home"
@@ -47,7 +47,7 @@
             class="row items-center"
           >
             <nuxt-link
-              to="./create"
+              to="/create"
             >
               <q-icon 
                 name="add_circle"
@@ -68,7 +68,7 @@
             class="row items-center"
           >
             <nuxt-link
-              to="./report"
+              to="/report"
             >
               <q-icon 
                 name="flag"

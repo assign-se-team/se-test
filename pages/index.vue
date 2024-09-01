@@ -37,7 +37,7 @@
           <div class="col-6"></div>
           <div class="col-2">
             <nuxt-link
-              to="./answer"
+              :to="'./test/' + quiz.id"
             >
               <q-btn
                 flat
@@ -56,6 +56,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import Menu from "../components/Menu.vue";
+import quizJson from '../quiz.json';
 
 // 問題一覧を表示するための変数
 interface quizObject {
@@ -66,40 +67,16 @@ interface quizObject {
   creator: string,
   totalQuestions: number,
 };
-const quizesArray = ref<Array<quizObject>>([
-  {
-    id: 1,
-    name: "SE職とは 基礎編",
-    description: "育成メンバー向けのSE職に関する基本的な理解を問う問題です。",
-    date: "2024/08/27 23:59",
-    creator: "三浦",
-    totalQuestions: 20,
-  },
-  {
-    id: 2,
-    name: "SE職とは 応用編",
-    description: "戦力化AGT向けのSE職に関する深い理解を問う問題です。",
-    date: "2024/08/27 23:59",
-    creator: "三浦",
-    totalQuestions: 20,
-  },
-  {
-    id: 3,
-    name: "プログラミング言語の種類(1)",
-    description: "各プログラミング言語の性質や用途を問う問題です",
-    date: "2024/08/28 10:10",
-    creator: "矢田",
-    totalQuestions: 10,
-  },
-  {
-    id: 4,
-    name: "プログラミング言語の種類(2)",
-    description: "各プログラミング言語の性質や用途を問う問題です",
-    date: "2024/08/28 10:15",
-    creator: "矢田",
-    totalQuestions: 15,
-  },
-]);
+const quizesArray = ref<Array<quizObject>>(quizJson.main.map((e:any)=>{
+  return {
+    id: e.id,
+    name: e.name,
+    description: e.description,
+    date: e.date,
+    creator: e.creator,
+    totalQuestions: e.quizes.length,
+  };
+}));
 
 
 </script>
