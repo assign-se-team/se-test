@@ -17,10 +17,12 @@
         "./types/nitro-imports"
       ],
       "~/*": [
-        "../src/*"
+        "../pages/*",
+        "../pages/*"
       ],
       "@/*": [
-        "../src/*"
+        "../pages/*",
+        "../pages/*"
       ],
       "~~/*": [
         "../*",
@@ -79,10 +81,10 @@
         "../node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "~": [
-        "../src"
+        "../pages"
       ],
       "@": [
-        "../src"
+        "../pages"
       ],
       "~~": [
         "./.."
@@ -91,10 +93,10 @@
         "./.."
       ],
       "assets": [
-        "../src/assets"
+        "../pages/assets"
       ],
       "public": [
-        "../src/public"
+        "../pages/public"
       ],
       "#vue-router": [
         "./vue-router"
@@ -113,7 +115,7 @@
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./types/nitro.d.ts",
     "../**/*",
-    "../src/server/**/*"
+    "../pages/server/**/*"
   ],
   "exclude": [
     "../node_modules",

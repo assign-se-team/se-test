@@ -48,10 +48,16 @@
         "../node_modules/nuxt"
       ],
       "~": [
-        "../src"
+        "../pages"
+      ],
+      "~/*": [
+        "../pages/*"
       ],
       "@": [
-        "../src"
+        "../pages"
+      ],
+      "@/*": [
+        "../pages/*"
       ],
       "~~": [
         ".."
@@ -66,10 +72,10 @@
         "../*"
       ],
       "assets": [
-        "../src/assets"
+        "../pages/assets"
       ],
       "public": [
-        "../src/public"
+        "../pages/public"
       ],
       "#app": [
         "../node_modules/nuxt/dist/app"
@@ -87,7 +93,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/65375b1c-6b7a-4642-87b3-be8687138182.json"
+        "./manifest/meta/dev"
       ],
       "#build": [
         "."
@@ -131,7 +137,7 @@
     "./nuxt.d.ts",
     "../.config/nuxt.*",
     "../**/*",
-    "../src/**/*",
+    "../pages/**/*",
     "../node_modules/nuxt-quasar-ui/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
