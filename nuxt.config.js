@@ -2,5 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['nuxt-quasar-ui']
+  modules: ['nuxt-quasar-ui'],
+  router:{
+    base: '/se-test/'
+  },
+  generate: {
+    dir: 'docs'
+  },
 })
