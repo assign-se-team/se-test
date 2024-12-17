@@ -3,11 +3,9 @@
   <Menu></Menu>
     
   <!-- ページのメイン部分 -->
-   <div
-    class="row justify-center q-pa-md"
-   >
+   <div class="row justify-center q-pa-md main_page">
     <div
-      class="main_menu"
+      class="menu_card"
       v-for="(quiz, index) in quizesArray"
     >
 
@@ -58,6 +56,14 @@ import { ref } from 'vue';
 import Menu from "../components/Menu.vue";
 import quizJson from '../quiz.json';
 
+// ページのheadの設定
+useHead({
+  title: 'メニュー | SE知見テスト',
+  meta: [
+    { hid: 'robots', name: 'robots', content: 'noindex' }
+  ]
+});
+
 // 問題一覧を表示するための変数
 interface quizObject {
   id: number,
@@ -67,7 +73,7 @@ interface quizObject {
   creator: string,
   totalQuestions: number,
 };
-const quizesArray = ref<Array<quizObject>>(quizJson.main.map((e:any)=>{
+const quizesArray = ref<Array<quizObject>>(quizJson.main.map((e: any)=>{
   return {
     id: e.id,
     name: e.name,
@@ -78,12 +84,16 @@ const quizesArray = ref<Array<quizObject>>(quizJson.main.map((e:any)=>{
   };
 }));
 
-
 </script>
 
 <style>
-.main_menu{
+.main_page{
   width: 800px;
+  margin: 0px auto;
+}
+
+.menu_card{
+  width: 100%;
   margin: 0px 0px 20px 0px;
 }
 

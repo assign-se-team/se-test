@@ -11,19 +11,19 @@
           "id": 1,
           "question": "SEとは何の略称か？",
           "answer" : 1,
-          "1": "System Engineer",
-          "2": "Symphony Editor",
-          "3": "Super Emperor",
-          "4": "Shibata Eri"
+          "option1": "System Engineer",
+          "option2": "Symphony Editor",
+          "option3": "Super Emperor",
+          "option4": "Shibata Eri"
         },
         {
           "id": 2,
           "question": "下記の文章の【空欄】を埋めよ。\n\nシステムエンジニアは【空欄】言語を用いてシステムの開発を行う。",
           "answer" : 2,
-          "1": "プロパティ",
-          "2": "プログラミング",
-          "3": "プロパガンダ",
-          "4": "プロムナード"
+          "option1": "プロパティ",
+          "option2": "プログラミング",
+          "option3": "プロパガンダ",
+          "option4": "プロムナード"
         }
       ]
     },
