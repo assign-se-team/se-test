@@ -1,0 +1,3 @@
+const i=[{id:1,name:"SE職とは 基礎編",description:"育成メンバー向けのSE職に関する基本的な理解を問う問題です。",date:"2024/08/27 23:59",creator:"三浦",quizes:[{id:1,question:"SEとは何の略称か？",answer:1,option1:"System Engineer",option2:"Symphony Editor",option3:"Super Emperor",option4:"Shibata Eri"},{id:2,question:`下記の文章の【空欄】を埋めよ。
+
+システムエンジニアは【空欄】言語を用いてシステムの開発を行う。`,answer:2,option1:"プロパティ",option2:"プログラミング",option3:"プロパガンダ",option4:"プロムナード"}]},{id:2,name:"SE職とは 応用編",description:"戦力化AGT向けのSE職に関する深い理解を問う問題です。",date:"2024/08/27 23:59",creator:"三浦",quizes:[]},{id:3,name:"プログラミング言語の種類(1)",description:"各プログラミング言語の性質や用途を問う問題です",date:"2024/08/28 10:10",creator:"矢田",quizes:[]},{id:4,name:"プログラミング言語の種類(2)",description:"各プログラミング言語の性質や用途を問う問題です",date:"2024/08/28 10:15",creator:"矢田",quizes:[]}],o={main:i};export{o as q};
