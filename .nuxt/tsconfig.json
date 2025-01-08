@@ -2,6 +2,12 @@
 {
   "compilerOptions": {
     "paths": {
+      "nitropack/types": [
+        "../node_modules/nitropack/types"
+      ],
+      "nitropack/runtime": [
+        "../node_modules/nitropack/runtime"
+      ],
       "nitropack": [
         "../node_modules/nitropack"
       ],
@@ -29,9 +35,6 @@
       "@vue/compiler-sfc": [
         "../node_modules/@vue/compiler-sfc"
       ],
-      "@vue/runtime-dom": [
-        "../node_modules/@vue/runtime-dom"
-      ],
       "vue-router": [
         "../node_modules/vue-router"
       ],
@@ -46,6 +49,9 @@
       ],
       "nuxt": [
         "../node_modules/nuxt"
+      ],
+      "vite/client": [
+        "../node_modules/vite/client"
       ],
       "~": [
         ".."
@@ -71,6 +77,9 @@
       "@@/*": [
         "../*"
       ],
+      "#shared": [
+        "../shared"
+      ],
       "assets": [
         "../assets"
       ],
@@ -79,6 +88,12 @@
       ],
       "public/*": [
         "../public/*"
+      ],
+      "#build": [
+        "."
+      ],
+      "#build/*": [
+        "./*"
       ],
       "#app": [
         "../node_modules/nuxt/dist/app"
@@ -96,13 +111,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/682aea24-44af-4582-bb9a-55aa83559b77.json"
-      ],
-      "#build": [
-        "."
-      ],
-      "#build/*": [
-        "./*"
+        "./manifest/meta/554d3e4a-1b98-4e75-adfb-8bc5e5a06144.json"
       ],
       "#components": [
         "./components"
@@ -120,7 +129,7 @@
     "noUncheckedIndexedAccess": false,
     "forceConsistentCasingInFileNames": true,
     "noImplicitOverride": true,
-    "module": "ESNext",
+    "module": "preserve",
     "noEmit": true,
     "lib": [
       "ESNext",
@@ -141,17 +150,26 @@
     "../.config/nuxt.*",
     "../**/*",
     "../node_modules/nuxt-quasar-ui/runtime",
+    "../node_modules/nuxt-quasar-ui/dist/runtime",
     "../node_modules/@nuxt/devtools/runtime",
+    "../node_modules/@nuxt/devtools/dist/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
+    "../node_modules/@nuxt/telemetry/dist/runtime",
     ".."
   ],
   "exclude": [
     "../dist",
     "../node_modules",
     "../node_modules/nuxt/node_modules",
+    "../node_modules/nuxt-quasar-ui/node_modules",
+    "../node_modules/@nuxt/devtools/node_modules",
+    "../node_modules/@nuxt/telemetry/node_modules",
     "../node_modules/nuxt-quasar-ui/runtime/server",
+    "../node_modules/nuxt-quasar-ui/dist/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
+    "../node_modules/@nuxt/devtools/dist/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
+    "../node_modules/@nuxt/telemetry/dist/runtime/server",
     "../.output"
   ]
 }

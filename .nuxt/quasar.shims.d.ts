@@ -140,7 +140,7 @@ declare module 'nuxt-quasar-ui' {
   }
 }
 
-declare module 'nuxt/schema' {
+declare module '@nuxt/schema' {
   interface AppConfigInput {
     ["nuxtQuasar"]?: import("nuxt-quasar-ui").QuasarUIConfiguration
   }
